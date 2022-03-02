@@ -51,6 +51,8 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-native": "^0.67.3",
+    "react-native-svg": "^12.3.0"
   }
 }

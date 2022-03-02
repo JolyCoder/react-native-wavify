@@ -1,31 +1,20 @@
-import React from 'react'
-import WaveBase from './wave'
-import PropTypes from './props'
+import React from 'react';
+import WaveBase from './wave';
 
 const defaults = {
   height: 20,
   amplitude: 20,
   speed: 0.15,
   points: 3,
-}
+};
 
-const Wave = ({ options, ...rest }) =>
+const Wave = ({ options, ...rest }) => (
   <WaveBase {...defaults} {...options} {...rest} />
+);
 
 Wave.defaultProps = {
   paused: false,
-  fill: '#fff'
-}
+  fill: '#fff',
+};
 
-if (__isDev__) {
-  Wave.displayName = 'Wave'
-
-  Wave.propTypes = {
-    paused: PropTypes.bool,
-    fill: PropTypes.string,
-    options: PropTypes.object
-  }
-}
-
-
-export default Wave
+export default Wave;
